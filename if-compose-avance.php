@@ -14,13 +14,13 @@ echo "<br>";
 echo "Mon chat est vivant, de couleur blanc et a les yeux Vert";
 echo "<br>";
 
-if(...) {
+/* if(...) {
     echo "Oui";
 }
 else {
     echo "Non";
 }
-echo "<br><br>";
+echo "<br><br>"; */
 
 //----------------------------------------
 /*###############################################*/
@@ -39,7 +39,7 @@ $couleur = "Marron";
 $yeux = "Vert";
 
 
-if(...) {
+if(($animal = "Chat" || $animal = "Chien") && $yeux = "Vert" && $couleur = "Marron") {
     echo 'Oui';
 }
 else {
@@ -60,7 +60,7 @@ $vivant = true;
 $couleur = "Blanc";
 $yeux = "Vert";
 
-if(...) {
+if($vivant = true && $yeux === "Vert" && $animal === "Chat" && ($couleur === ("Marron" || "Blanc"))) {
     echo 'Oui';
 }
 else {
@@ -82,7 +82,9 @@ $couleur = "Noir";
 $yeux = "Vert";
 
 /** remplacer le chiffre 0 par les bonnes conditions **/
-if(...) {
+if(($animal === "Chien" && $yeux === "Bleus" && $couleur === "Noir" && $vivant = false) ||
+    ($animal === "Chat" && $yeux === "Bleus" && $couleur === "Orange" && $vivant = true) ||
+    ($animal === "Chien" && $yeux === "Bleus" && $couleur === "Marron" && $vivant = true)) {
     echo 'Oui';
 }
 else {
@@ -90,3 +92,5 @@ else {
 }
 echo "<br><br>";
 //----------------------------------------
+
+?>
